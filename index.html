@@ -16,10 +16,10 @@
         }
 
         header {
-            background-color: #333;
-            color: white;
+            background-color: #fffcfc;
+            color: rgb(24, 127, 245);
             text-align: center;
-            padding: 20px;
+            padding: 10px;
             width: 100%;
         }
 
@@ -72,12 +72,15 @@
 <body>
 
     <header>
-        <h1>Transport Department of India</h1>
+        <h1>GOVERNMENT E - PASS</h1>
     </header>
 
     <form action="#" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone No.</label>
+        <input type="text" id="phone" name="phone" required>
 
         <label for="aadhaar">Aadhaar Number:</label>
         <input type="text" id="aadhaar" name="aadhaar" pattern="[0-9]{12}" required>
@@ -86,19 +89,35 @@
         <label for="occupation">Occupation:</label>
         <input type="text" id="occupation" name="occupation" required>
 
+        <label for="collegeid">College id: </label>
+        <input type="text" id="collegeid" name="collegeid" required>
+
         <label for="state">State:</label>
         <select id="state" name="state" required>
             <option value="">Select State</option>
-            <option value="state1">State 1</option>
-            <option value="state2">State 2</option>
+            <option value="state1">Arunachal Pradesh</option>
+            <option value="state2">Andrapradesh</option>
+            <option value="state2">Punjab</option>
+            <option value="state2">Delhi</option>
+            <option value="state2">Haryana</option>
+            <option value="state2">Jammu And Kashmir</option>
+            <option value="state2">Jharkhand</option>
+            <option value="state2">Uttar Pradesh</option>
             <!-- Add more states as needed -->
         </select>
+
 
         <label for="fromBusStand">From Bus Stand:</label>
         <input type="text" id="fromBusStand" name="fromBusStand" required>
 
         <label for="toBusStand">To Bus Stand:</label>
         <input type="text" id="toBusStand" name="toBusStand" required>
+
+        <label for="date">From Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="date">To Date:</label>
+        <input type="date" id="date" name="date" required>
 
         <button type="submit">Submit</button>
     </form>
